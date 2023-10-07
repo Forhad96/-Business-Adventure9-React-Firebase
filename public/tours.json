@@ -16,7 +16,8 @@
     "ctaText": "Explore Our Tours"
   },
   "tours": [
-    {
+    { 
+      "Id":1,
       "tourName": "Mountain Retreat",
       "tourDescription": "Escape to the mountains for a rejuvenating corporate retreat.",
       "tourDate": "2024-04-10",
@@ -34,6 +35,7 @@
       ]
     },
     {
+      "Id":2,
       "tourName": "City Team-Building Adventure",
       "tourDescription": "Explore the city while building strong team bonds.",
       "tourDate": "2024-06-25",
@@ -51,6 +53,7 @@
       ]
     },
     {
+      "Id":3,
       "tourName": "Coastal Getaway",
       "tourDescription": "Relax on the shores of a beautiful coastal resort.",
       "tourDate": "2024-08-15",
@@ -68,6 +71,7 @@
       ]
     },
     {
+      "Id":4,
       "tourName": "Wilderness Survival Challenge",
       "tourDescription": "Test your team's survival skills in the wilderness.",
       "tourDate": "2024-09-20",
@@ -85,6 +89,7 @@
       ]
     },
     {
+      "Id":5,
       "tourName": "Historical Landmarks Tour",
       "tourDescription": "Explore the rich history of famous landmarks.",
       "tourDate": "2024-10-10",
@@ -102,6 +107,7 @@
       ]
     },
     {
+      "Id":6,
       "tourName": "Desert Adventure",
       "tourDescription": "Embark on an exciting desert adventure with your team.",
       "tourDate": "2024-11-30",
@@ -162,7 +168,72 @@
       "featureDescription": "Safety measures and precautions in place to ensure a secure and enjoyable journey."
     }
   ],
-
+"gallery": {
+  "title": "Memorable Moments Gallery",
+  "description": "Explore the unforgettable moments and experiences our clients have had during their corporate tours with Business Adventure.",
+  "images": [
+    {
+      "id": "1",
+      "caption": "Team bonding during a mountain hike",
+      "url": "https://example.com/gallery-image1.jpg"
+    },
+    {
+      "id": "2",
+      "caption": "A successful team-building activity",
+      "url": "https://example.com/gallery-image2.jpg"
+    },
+    {
+      "id": "3",
+      "caption": "Scenic view from our city adventure",
+      "url": "https://example.com/gallery-image3.jpg"
+    },
+    {
+      "id": "4",
+      "caption": "Sharing stories around the campfire",
+      "url": "https://example.com/gallery-image4.jpg"
+    },
+    {
+      "id": "5",
+      "caption": "Team enjoying a local culinary experience",
+      "url": "https://example.com/gallery-image5.jpg"
+    },
+    {
+      "id": "6",
+      "caption": "Celebrating achievements in the great outdoors",
+      "url": "https://example.com/gallery-image6.jpg"
+    },
+    {
+      "id": "7",
+      "caption": "Adventurous river rafting with the team",
+      "url": "https://example.com/gallery-image7.jpg"
+    },
+    {
+      "id": "8",
+      "caption": "Exploring ancient ruins during a cultural tour",
+      "url": "https://example.com/gallery-image8.jpg"
+    },
+    {
+      "id": "9",
+      "caption": "Relaxing by the lakeside after an exciting day",
+      "url": "https://example.com/gallery-image9.jpg"
+    },
+    {
+      "id": "10",
+      "caption": "Creative team-building exercises in the great outdoors",
+      "url": "https://example.com/gallery-image10.jpg"
+    },
+    {
+      "id": "11",
+      "caption": "Aerial view of our team's mountain climb achievement",
+      "url": "https://example.com/gallery-image11.jpg"
+    },
+    {
+      "id": "12",
+      "caption": "Savoring local delicacies during a culinary tour",
+      "url": "https://example.com/gallery-image12.jpg"
+    }
+  ]
+},
   "faqSection": {
     "title": "Frequently Asked Questions",
     "questions": [

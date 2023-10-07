@@ -1,87 +1,85 @@
+import { useState } from "react";
 import UseGetData from "../../Hooks/UseGetData";
+import { useParams } from "react-router-dom";
 
 const TourDetails = () => {
-    const {tours,loading} = UseGetData()
-    // const {tourName,tourDescription} = tours;
+  const [tourDetails,setTourDetails] = useState()
+  const {tours,loading} = UseGetData()
+  const {Id} = useParams()
+
+    if(loading){
+     return console.log('loading');
+    }
+
+
+    const filteredTour = tours?.find(tour => tour.Id == Id)
+    console.log(filteredTour);
+    const {
+      tourName,
+      tourDescription,
+      destination,
+      price,
+      duration,
+      facilities,
+    } = filteredTour;
+
     return (
-      <section className="container mx-auto p-10 md:p-20 antialiased ">
-        <article className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto max-w-3xl group cursor-pointer transform duration-500 hover:-translate-y-1">
-          <img
-            className="w-full max-h-[400px] object-cover md:w-52"
-            src="https://i.ibb.co/Kr4b0zJ/152013403-10158311889099633-8423107287930246533-o.jpg"
-            alt=""
-          />
-          <div className="">
-            <div className="p-5 pb-10">
-              <h1 className="text-2xl font-semibold text-gray-800 mt-4">
-               {tours.tourName}
-              </h1>
-              <p className="text-xl text-gray-400 mt-2 leading-relaxed">
-                Located in Rajshahi Division, Bogra is one of the oldest and
-                most fascinating towns in Bangladesh
-              </p>
-            </div>
-            <div className="bg-blue-50 p-5">
-              <div className="sm:flex sm:justify-between">
-                <div>
-                  <div className="text-lg text-gray-700">
-                    <span className="text-gray-900 font-bold">196 km</span> from
-                    Dhaka
-                  </div>
-                  <div className="flex items-center">
-                    <div className="flex">
-                      <svg
-                        className="w-4 h-4 mx-px fill-current text-green-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 14 14"
-                      >
-                        <path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path>
-                      </svg>
-                      <svg
-                        className="w-4 h-4 mx-px fill-current text-green-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 14 14"
-                      >
-                        <path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path>
-                      </svg>
-                      <svg
-                        className="w-4 h-4 mx-px fill-current text-green-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 14 14"
-                      >
-                        <path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path>
-                      </svg>
-                      <svg
-                        className="w-4 h-4 mx-px fill-current text-green-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 14 14"
-                      >
-                        <path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path>
-                      </svg>
-                      <svg
-                        className="w-4 h-4 mx-px fill-current text-green-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 14 14"
-                      >
-                        <path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path>
-                      </svg>
-                    </div>
-                    <div className="text-gray-600 ml-2 text-sm md:text-base mt-1">
-                      16 reviews
-                    </div>
-                  </div>
-                </div>
-                <button className="mt-3 sm:mt-0 py-2 px-5 md:py-3 md:px-6 bg-purple-700 hover:bg-purple-600 font-bold text-white md:text-lg rounded-lg shadow-md">
-                  Book Ticket
-                </button>
+      <div className="bg-gray-100 py-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row -mx-4">
+            <div className="md:flex-1 px-4">
+              <div className="h-[460px] rounded-lg bg-gray-300 mb-4">
+                <img
+                  className="w-full h-full object-cover"
+                  src="https://plus.unsplash.com/premium_photo-1676982102134-00bcdd1ccd61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  alt="Product Image"
+                />
               </div>
-              <div className="mt-3 text-gray-600 text-sm md:text-sm">
-                *Places to visit: Mahasthangarh, Vasu Bihar &amp; Momo Inn
+            </div>
+            <div className="md:flex-1 px-4">
+              <h2 className="text-2xl font-bold mb-2">{tourName}</h2>
+              <p className="text-gray-600 text-sm mb-4">{tourDescription}</p>
+              <div className="mb-4">
+                <p>
+                  <span className="font-bold text-gray-700">Destination:</span>
+                  {destination}
+                </p>
+              </div>
+
+              <div>
+                <span className="font-bold text-gray-700">Facilities:</span>
+                {facilities.map((facility, idx) => (
+                  <li key={idx}>{facility}</li>
+                ))}
+              </div>
+
+              <div className="flex my-4">
+                <div className="mr-4">
+                  <span className="font-bold text-gray-700">Price:</span>
+                  <span className="text-gray-600">{price}</span>
+                </div>
+                <div>
+                  <span className="font-bold text-gray-700">Duration:</span>
+                  <span className="text-gray-600"> {duration}</span>
+                </div>
+              </div>
+
+              <div className="flex -mx-2 mb-4">
+                <div className="w-1/2 px-2">
+                  <button className="w-full bg-gray-900 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800">
+                    Add to Cart
+                  </button>
+                </div>
+                <div className="w-1/2 px-2">
+                  <button className="w-full bg-gray-400 text-gray-800 py-2 px-4 rounded-full font-bold hover:bg-gray-300">
+                    Add to Wishlist
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </article>
-      </section>
+        </div>
+      </div>
     );
 };
 

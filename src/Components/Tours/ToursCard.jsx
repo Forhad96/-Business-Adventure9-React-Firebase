@@ -15,7 +15,7 @@ const ToursCard = ({ tour }) => {
       <div className="z-10 gap-y-1  overflow-hidden text-sm leading-6 text-gray-300">
         {tour.destination}
       </div>
-      <Link to="/tourDetails">
+      <Link to={`/tourDetails/${tour.Id}`}>
         <button className="z-10 gap-y-1 btn bg-transparent btn-outline-success overflow-hidden text-sm leading-6 text-gray-300">
           Details
         </button>
