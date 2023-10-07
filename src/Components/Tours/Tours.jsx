@@ -1,12 +1,14 @@
+import UseGetData from "../../Hooks/UseGetData";
 import ToursCard from "./ToursCard";
 
 
 const Tours = () => {
-    const data = [1,2,3,4,5,6];
+  const {tours} = UseGetData()
+
     return (
-      <div className="grid grid-cols-3 px-4 sm:px-6 md:px-8">
-        {data.map((num, idx) => (
-          <ToursCard key={idx}></ToursCard>
+      <div className="grid grid-cols-3 gap-5 place-content-center px-4 sm:px-6 md:px-8">
+        {tours?.map((tour, idx) => (
+          <ToursCard key={idx} tour={tour}></ToursCard>
         ))}
       </div>
     );

@@ -136,6 +136,62 @@
       "testimonialText": "The coastal getaway was a perfect blend of relaxation and team bonding. We can't wait to book another tour with your organization."
     }
   ],
+  "features": [
+    {
+      "featureTitle": "Customized Experiences",
+      "featureDescription": "Tailor-made corporate tours designed to meet your team's unique preferences and goals."
+    },
+    {
+      "featureTitle": "Expert Guides",
+      "featureDescription": "Experienced guides with in-depth knowledge of the destinations and team-building activities."
+    },
+    {
+      "featureTitle": "Seamless Planning",
+      "featureDescription": "Effortless event planning, logistics, and coordination for a stress-free experience."
+    },
+    {
+      "featureTitle": "Diverse Destinations",
+      "featureDescription": "Explore a variety of breathtaking destinations, from mountains to cities to coastal resorts."
+    },
+    {
+      "featureTitle": "Team-Building Excellence",
+      "featureDescription": "Engaging team-building activities that enhance collaboration, leadership, and camaraderie."
+    },
+    {
+      "featureTitle": "Safety First",
+      "featureDescription": "Safety measures and precautions in place to ensure a secure and enjoyable journey."
+    }
+  ],
+
+  "faqSection": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "question": "How can I book a corporate tour with Business Adventure?",
+        "answer": "Booking a corporate tour with us is easy! Simply visit our 'Tours' page, select the tour you're interested in, and follow the booking instructions. If you need assistance, you can also contact our customer support."
+      },
+      {
+        "question": "Are the tours customizable to our team's preferences?",
+        "answer": "Absolutely! We specialize in customized tours. We'll work closely with you to tailor the tour to your team's unique preferences, objectives, and requirements."
+      },
+      {
+        "question": "What safety measures are in place during the tours?",
+        "answer": "Safety is our top priority. Our experienced guides are trained in safety procedures, and we provide appropriate safety equipment for outdoor adventures. We follow all local regulations and guidelines for a secure experience."
+      },
+      {
+        "question": "Do you offer transportation for the tours?",
+        "answer": "Yes, we provide efficient and comfortable transportation arrangements for our tours. Details about transportation will be provided when you book a tour."
+      },
+      {
+        "question": "What is the cancellation policy?",
+        "answer": "Our cancellation policy varies depending on the tour and circumstances. Please refer to the specific tour's booking page for cancellation details. We aim to be flexible and accommodating."
+      },
+      {
+        "question": "Can I request a custom team-building activity?",
+        "answer": "Certainly! We encourage creativity. If you have a specific team-building activity in mind, let us know during the tour customization process, and we'll do our best to accommodate your request."
+      }
+    ]
+  },
   "aboutUs": {
     "mission": "Our mission is to provide exceptional corporate tours that foster teamwork, create lasting memories, and inspire growth.",
     "vision": "Our vision is to be the leading provider of corporate tour experiences known for excellence, innovation, and customer satisfaction.",
