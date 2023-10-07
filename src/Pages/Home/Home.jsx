@@ -1,9 +1,12 @@
+import Banner from "../../Components/Header/Banner";
+import Tours from "../../Components/Tours/Tours";
 
 
 const Home = () => {
     return (
         <div>
-            This is home
+            <Banner></Banner>
+            <Tours></Tours>
         </div>
     );
 };

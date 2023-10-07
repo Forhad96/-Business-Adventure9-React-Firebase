@@ -1,0 +1,160 @@
+{
+  "websiteInfo": {
+    "name": "Business Adventure",
+    "description": "We specialize in creating memorable corporate tours and team-building experiences.",
+    "logo": "https://example.com/logo.png",
+    "contact": {
+      "email": "contact@businessadventure.com",
+      "phone": "+1 (123) 456-7890",
+      "address": "123 Business Street, City, State, ZIP"
+    }
+  },
+    "heroSection": {
+    "title": "Unlock New Horizons with Business Adventure",
+    "subtitle": "Elevate Your Team's Success Through Unforgettable Corporate Tours",
+    "description": "At Business Adventure, we believe that extraordinary experiences lead to extraordinary results. Join us on a journey where teamwork thrives, bonds are forged, and innovation flourishes. We specialize in creating tailor-made corporate tours that blend adventure, learning, and inspiration.",
+    "ctaText": "Explore Our Tours"
+  },
+  "tours": [
+    {
+      "tourName": "Mountain Retreat",
+      "tourDescription": "Escape to the mountains for a rejuvenating corporate retreat.",
+      "tourDate": "2024-04-10",
+      "duration": "4 days",
+      "destination": "Mountain Lodge, Nature Resort",
+      "image": "https://example.com/mountain-retreat.jpg",
+      "bookingLink": "https://example.com/book/mountain-retreat",
+      "price": "$1,500 per person",
+      "facilities": [
+        "Accommodation at the Mountain Lodge",
+        "Meals included",
+        "Guided nature hikes",
+        "Team-building activities",
+        "Transportation to and from the lodge"
+      ]
+    },
+    {
+      "tourName": "City Team-Building Adventure",
+      "tourDescription": "Explore the city while building strong team bonds.",
+      "tourDate": "2024-06-25",
+      "duration": "2 days",
+      "destination": "Downtown City, State",
+      "image": "https://example.com/city-adventure.jpg",
+      "bookingLink": "https://example.com/book/city-adventure",
+      "price": "$800 per person",
+      "facilities": [
+        "Accommodation at a city hotel",
+        "Meals included",
+        "City exploration tours",
+        "Team-building workshops",
+        "Transportation within the city"
+      ]
+    },
+    {
+      "tourName": "Coastal Getaway",
+      "tourDescription": "Relax on the shores of a beautiful coastal resort.",
+      "tourDate": "2024-08-15",
+      "duration": "3 days",
+      "destination": "Seaside Resort, Coastal Town",
+      "image": "https://example.com/coastal-getaway.jpg",
+      "bookingLink": "https://example.com/book/coastal-getaway",
+      "price": "$1,200 per person",
+      "facilities": [
+        "Accommodation at the seaside resort",
+        "Meals included",
+        "Beachside relaxation",
+        "Water sports activities",
+        "Teambuilding games"
+      ]
+    },
+    {
+      "tourName": "Wilderness Survival Challenge",
+      "tourDescription": "Test your team's survival skills in the wilderness.",
+      "tourDate": "2024-09-20",
+      "duration": "5 days",
+      "destination": "Remote Wilderness Camp",
+      "image": "https://example.com/wilderness-challenge.jpg",
+      "bookingLink": "https://example.com/book/wilderness-challenge",
+      "price": "$2,000 per person",
+      "facilities": [
+        "Accommodation in wilderness cabins",
+        "Meals provided",
+        "Survival skills training",
+        "Outdoor challenges",
+        "Transportation to the wilderness camp"
+      ]
+    },
+    {
+      "tourName": "Historical Landmarks Tour",
+      "tourDescription": "Explore the rich history of famous landmarks.",
+      "tourDate": "2024-10-10",
+      "duration": "4 days",
+      "destination": "Various Historical Sites",
+      "image": "https://example.com/historical-landmarks.jpg",
+      "bookingLink": "https://example.com/book/historical-landmarks",
+      "price": "$1,300 per person",
+      "facilities": [
+        "Accommodation at historic inns",
+        "Meals included",
+        "Guided historical tours",
+        "Interactive historical activities",
+        "Transportation to landmark sites"
+      ]
+    },
+    {
+      "tourName": "Desert Adventure",
+      "tourDescription": "Embark on an exciting desert adventure with your team.",
+      "tourDate": "2024-11-30",
+      "duration": "3 days",
+      "destination": "Desert Camp, Arid Region",
+      "image": "https://example.com/desert-adventure.jpg",
+      "bookingLink": "https://example.com/book/desert-adventure",
+      "price": "$1,100 per person",
+      "facilities": [
+        "Accommodation in desert tents",
+        "Meals provided",
+        "Desert exploration and activities",
+        "Team challenges",
+        "Transportation to the desert camp"
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "John Smith",
+      "position": "CEO, ABC Company",
+      "testimonialText": "Our corporate retreat in the mountains was an incredible experience. Your team's attention to detail and seamless organization made it a trip to remember."
+    },
+    {
+      "author": "Emily Johnson",
+      "position": "HR Manager, XYZ Inc.",
+      "testimonialText": "The city team-building adventure was a fantastic way to strengthen our team's bonds while exploring the city's hidden gems. Thank you!"
+    },
+    {
+      "author": "David Wilson",
+      "position": "COO, 123 Enterprises",
+      "testimonialText": "The coastal getaway was a perfect blend of relaxation and team bonding. We can't wait to book another tour with your organization."
+    }
+  ],
+  "aboutUs": {
+    "mission": "Our mission is to provide exceptional corporate tours that foster teamwork, create lasting memories, and inspire growth.",
+    "vision": "Our vision is to be the leading provider of corporate tour experiences known for excellence, innovation, and customer satisfaction.",
+    "team": [
+      {
+        "name": "John Smith",
+        "position": "Founder & CEO",
+        "image": "https://example.com/john-smith.jpg"
+      },
+      {
+        "name": "Emily Johnson",
+        "position": "COO",
+        "image": "https://example.com/emily-johnson.jpg"
+      },
+      {
+        "name": "David Wilson",
+        "position": "Director of Operations",
+        "image": "https://example.com/david-wilson.jpg"
+      }
+    ]
+  }
+}

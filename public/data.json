@@ -1,0 +1,93 @@
+{
+  "homepage": {
+    "sectionImage": "https://example.com/images/homepage-section-image.jpg",
+    "hero": {
+      "title": "Corporate Event Tour Company",
+      "subtitle": "Plan your perfect corporate event tour with us.",
+      "cta": "Get a free quote"
+    },
+    "about": {
+      "description": "We are a team of experienced corporate event tour planners. We can help you plan and execute any type of corporate event tour, from small seminars to large conferences. We will work with you to create a custom tour that meets your needs and budget."
+    },
+    "services": [
+      {
+        "title": "Transportation",
+        "description": "We arrange for transportation for your group to and from the event, as well as to and from the airport or hotel."
+      },
+      {
+        "title": "Accommodation",
+        "description": "We help you book hotel rooms or other accommodations for your group and negotiate group rates and discounts."
+      },
+      {
+        "title": "Event tickets",
+        "description": "We purchase event tickets for your group and have them delivered to your hotel or another convenient location."
+      },
+      {
+        "title": "Food and beverage",
+        "description": "We arrange for meals and snacks for your group, either at the event itself or at other restaurants or venues."
+      },
+      {
+        "title": "Activities",
+        "description": "We plan and book activities for your group to do before, during, or after the event."
+      },
+      {
+        "title": "On-site support",
+        "description": "We provide on-site support during the event to ensure that everything runs smoothly."
+      }
+    ],
+    "testimonials": [
+      {
+        "author": "John Smith",
+        "company": "Acme Corporation",
+        "quote": "We were so impressed with the corporate event tour company team. They went above and beyond to make our tour a success."
+      },
+      {
+        "author": "Jane Doe",
+        "company": "XYZ Company",
+        "quote": "The corporate event tour company team is the best in the business. They are professional, organized, and creative. We would highly recommend them to anyone planning a corporate event tour."
+      }
+    ]
+  },
+  "destinations": [
+    {
+      "name": "Singapore",
+      "price": 3999,
+      "sectionImage": "https://example.com/images/singapore-section-image.jpg"
+    },
+    {
+      "name": "London",
+      "price": 4999,
+      "sectionImage": "https://example.com/images/london-section-image.jpg"
+    },
+    {
+      "name": "New York City",
+      "price": 5999,
+      "sectionImage": "https://example.com/images/new-york-city-section-image.jpg"
+    },
+    {
+      "name": "Sydney",
+      "price": 6999,
+      "sectionImage": "https://example.com/images/sydney-section-image.jpg"
+    },
+    {
+      "name": "Tokyo",
+      "price": 7999,
+      "sectionImage": "https://example.com/images/tokyo-section-image.jpg"
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "Acme Corporation Annual Conference Tour",
+      "image": "https://example.com/images/acme-conference-tour.jpg",
+      "description": "We planned and executed a three-day conference tour for Acme Corporation with over 1,000 attendees. The tour included visits to three different cities and featured keynote speakers, breakout sessions, and networking events."
+    },
+    {
+      "title": "XYZ Company Holiday Party Tour",
+      "image": "https://example.com/images/xyz-holiday-party-tour.jpg",
+      "description": "We planned and executed a holiday party tour for XYZ Company with over 500 attendees. The tour included visits to two different cities and featured cocktail hours, dinners, dancing, and live entertainment."
+    }
+  ],
+  "contact": {
+    "address": "123 Main Street, Anytown, CA 91234
+  }
+}

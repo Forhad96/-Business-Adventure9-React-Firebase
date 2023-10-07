@@ -2,9 +2,9 @@
 
 const Navbar = () => {
     return (
-      <div className="navbar rounded-lg bg-green-10 ">
+      <div className="navbar rounded-lg bg-green-2 ">
         <div className="navbar-start">
-          <a className="navbar-item text-white">Business Adventure</a>
+          <a className="navbar-item text-green-10 text-2xl">Business Adventure</a>
         </div>
         <div className="navbar-center">
           <a className="navbar-item">Home</a>
