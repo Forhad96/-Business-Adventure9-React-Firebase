@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Login from "../../Pages/Users/Login";
-import Register from "../../Pages/Users/Register";
+
 
 const Navbar = () => {
   const links = (
@@ -56,7 +56,12 @@ const Navbar = () => {
             </div>
           </div>
         ) : (
-          <Register></Register>
+        
+            <p className="bg-green-10 py-2 px-4  rounded">
+
+              <Login></Login>
+            </p>
+       
         )}
       </div>
     </div>

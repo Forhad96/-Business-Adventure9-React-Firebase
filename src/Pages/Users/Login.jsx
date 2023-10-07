@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
-import Register from "./Register";
+
 
 
 const Login = () => {
+
+  const handleSingUp=()=>{
+    document.getElementById("modal-1").checked = false;
+  }
     return (
       <article>
-        <label className="btn btn-success" htmlFor="modal-1">
+        <label className="" htmlFor="modal-1">
           Login
         </label>
 
@@ -147,9 +151,10 @@ const Login = () => {
               </div>
               <div className="items-center justify-center text-xs dark:text-gray-5 sm:px-6 flex gap-2">
                 <span>Don&rsquo;t have an account?</span>
-                <Link to='/register'>
-                <Register ></Register>
+                <Link onClick={handleSingUp} className="link link-primary text-xs " to="/register">
+                  Sing Up
                 </Link>
+    
               </div>
             </section>
           </div>
