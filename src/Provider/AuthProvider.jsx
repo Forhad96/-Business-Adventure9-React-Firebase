@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { createContext, useEffect, useState } from "react";
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, updateProfile } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import app from '../firebase/firebaseConfig';
 
  const auth = getAuth(app);
@@ -37,7 +37,11 @@ const profileUpdate= (name,photo)=>{
         displayName:name,photoURL:photo
     })
 }
-
+// sinIn with email and password
+const singInEmail =(email,password)=>{
+    setLoading(true)
+    return signInWithEmailAndPassword(auth,email,password)
+}
 
 
   const authInfo = {
@@ -45,6 +49,7 @@ const profileUpdate= (name,photo)=>{
     loading,
     createUser,
     profileUpdate,
+    singInEmail,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
