@@ -1,10 +1,24 @@
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import toast from "react-hot-toast";
 
 
 const SocialLogin = () => {
+  const {googleSingIn}= useContext(AuthContext)
+  const handleSocial=(socialLogin)=>{
+    socialLogin()
+    .then(()=>{
+      toast.success('Login successful')
+    })
+    .catch(error =>{
+      toast.error(error.code)
+    })
+  }
     return (
       <div>
         <div className="flex justify-center space-x-4">
           <button
+            onClick={()=>handleSocial(googleSingIn)}
             type="button"
             aria-label="Log in with Google"
             className="rounded-sm p-3"

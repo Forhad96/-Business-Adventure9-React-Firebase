@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types'
 import { createContext, useEffect, useState } from "react";
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, updateProfile } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import app from '../firebase/firebaseConfig';
 
- const auth = getAuth(app);
 
- export const AuthContext = createContext(null)
+export const AuthContext = createContext(null)
+const auth = getAuth(app);
+const googleProvider = new GoogleAuthProvider()
+
 
 const AuthProvider = ({children}) => {
 
@@ -16,7 +18,7 @@ const AuthProvider = ({children}) => {
     const unSubscribe = onAuthStateChanged(auth,currentUser =>{
         setUser(currentUser)
         setLoading(false)
-        console.log(currentUser);
+        
     }) 
 
     return ()=>{
@@ -48,6 +50,14 @@ const logOut =()=>{
   setLoading(true)
   return signOut(auth)
 }
+
+// sing in user with google
+const googleSingIn=()=>{
+  setLoading(true)
+  return signInWithPopup(auth,googleProvider)
+}
+
+
   const authInfo = {
     user,
     loading,
@@ -55,6 +65,7 @@ const logOut =()=>{
     profileUpdate,
     singInEmail,
     logOut,
+    googleSingIn,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

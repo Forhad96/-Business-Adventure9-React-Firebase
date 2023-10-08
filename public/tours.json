@@ -125,23 +125,65 @@
       ]
     }
   ],
+
   "testimonials": [
     {
+      "id": "1",
       "author": "John Smith",
       "position": "CEO, ABC Company",
       "testimonialText": "Our corporate retreat in the mountains was an incredible experience. Your team's attention to detail and seamless organization made it a trip to remember."
     },
     {
+      "id": "2",
       "author": "Emily Johnson",
       "position": "HR Manager, XYZ Inc.",
       "testimonialText": "The city team-building adventure was a fantastic way to strengthen our team's bonds while exploring the city's hidden gems. Thank you!"
     },
     {
-      "author": "David Wilson",
-      "position": "COO, 123 Enterprises",
-      "testimonialText": "The coastal getaway was a perfect blend of relaxation and team bonding. We can't wait to book another tour with your organization."
+      "id": "3",
+      "author": "Sarah Davis",
+      "position": "Marketing Director, QRS Solutions",
+      "testimonialText": "Business Adventure's customized tours allowed us to align our team's objectives with an unforgettable experience. It was a game-changer for our team dynamics."
+    },
+    {
+      "id": "4",
+      "author": "Michael White",
+      "position": "CFO, LMN Enterprises",
+      "testimonialText": "The attention to safety and professionalism during our corporate tour was commendable. We felt secure while enjoying every moment."
+    },
+    {
+      "id": "5",
+      "author": "Susan Lee",
+      "position": "Project Manager, PQR Innovations",
+      "testimonialText": "I've been on many corporate tours, but Business Adventure stands out for its ability to blend team-building and adventure seamlessly."
+    },
+    {
+      "id": "6",
+      "author": "David Miller",
+      "position": "Operations Manager, RST Corp",
+      "testimonialText": "The team-building activities were both fun and insightful. They sparked new ideas and strengthened our collaboration."
+    },
+    {
+      "id": "7",
+      "author": "Jennifer Brown",
+      "position": "Sales Director, UVW Solutions",
+      "testimonialText": "Our corporate tour with Business Adventure was a bonding experience like no other. It left a lasting impression on our team."
+    },
+    {
+      "id": "8",
+      "author": "Daniel Harris",
+      "position": "IT Manager, WXY Tech",
+      "testimonialText": "The tour was meticulously planned, and the guides were knowledgeable. I highly recommend Business Adventure to any company."
+    },
+    {
+      "id": "9",
+      "author": "Laura Martinez",
+      "position": "Executive Assistant, DEF Corp",
+      "testimonialText": "From start to finish, our corporate tour was a smooth and enjoyable journey. It brought our team closer together."
     }
   ],
+
+
   "features": [
     {
       "featureTitle": "Customized Experiences",
@@ -234,9 +276,7 @@
     }
   ]
 },
-  "faqSection": {
-    "title": "Frequently Asked Questions",
-    "questions": [
+  "faqSection":  [
       {
         "question": "How can I book a corporate tour with Business Adventure?",
         "answer": "Booking a corporate tour with us is easy! Simply visit our 'Tours' page, select the tour you're interested in, and follow the booking instructions. If you need assistance, you can also contact our customer support."
@@ -261,8 +301,7 @@
         "question": "Can I request a custom team-building activity?",
         "answer": "Certainly! We encourage creativity. If you have a specific team-building activity in mind, let us know during the tour customization process, and we'll do our best to accommodate your request."
       }
-    ]
-  },
+    ],
   "aboutUs": {
     "mission": "Our mission is to provide exceptional corporate tours that foster teamwork, create lasting memories, and inspire growth.",
     "vision": "Our vision is to be the leading provider of corporate tour experiences known for excellence, innovation, and customer satisfaction.",

@@ -6,10 +6,13 @@ const Tours = () => {
   const {tours} = UseGetData()
 
     return (
-      <div className="grid grid-cols-3 gap-5 place-content-center px-4 sm:px-6 md:px-8">
-        {tours?.map((tour, idx) => (
-          <ToursCard key={idx} tour={tour}></ToursCard>
-        ))}
+      <div className="md:my-20 md:mx-16">
+        <h2 className="text-4xl text-center text-[#DAFFFB] font-bold mb-20">Our services</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 place-content-center">
+          {tours?.map((tour, idx) => (
+            <ToursCard key={idx} tour={tour}></ToursCard>
+          ))}
+        </div>
       </div>
     );
 };

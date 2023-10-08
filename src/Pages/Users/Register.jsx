@@ -9,6 +9,7 @@ const Register = () => {
   const [error, setError] = useState(null);
 
   const { createUser, profileUpdate } = useContext(AuthContext);
+  
 
   const handleRegister = (e) => {
     e.preventDefault();
