@@ -40,6 +40,9 @@ const Navbar = () => {
       <NavLink to="/favorites" className="navbar-item ">
         Favorites
       </NavLink>
+      <NavLink to="/profile" className="navbar-item ">
+        Profile
+      </NavLink>
     </>
   );
 
@@ -70,7 +73,7 @@ const Navbar = () => {
                 />
               </label>
               <div className="dropdown-menu bg-[#176B87] dropdown-menu-bottom-left">
-                <a className="dropdown-item text-sm">Profile</a>
+                <Link to='/profile' className="dropdown-item text-sm">Profile</Link>
                 <div className="md:hidden flex flex-col dropdown-item text-sm">
                   {links}
                 </div>

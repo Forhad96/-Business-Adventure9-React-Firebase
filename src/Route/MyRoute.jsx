@@ -10,6 +10,7 @@ import Register from "../Pages/Users/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Favorites from "../Pages/Favorites/Favorites";
 import Contact from "../Pages/Contact/Contact";
+import Profile from "../Pages/Profile/Profile";
 
 
 const MyRoute = createBrowserRouter([
@@ -47,13 +48,21 @@ const MyRoute = createBrowserRouter([
         element: <Register></Register>,
       },
       {
-        path:'/favorites',
-        element:<Favorites></Favorites>
+        path: "/favorites",
+        element: <Favorites></Favorites>,
       },
       {
-        path:'/contact',
-        element:<Contact></Contact>
-      }
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
+      {
+        path: "/profile",
+        element: (
+          <PrivateRoute>
+            <Profile></Profile>
+          </PrivateRoute>
+        ),
+      },
     ],
   },
 ]);

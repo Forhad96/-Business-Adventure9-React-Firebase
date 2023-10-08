@@ -1,3 +1,4 @@
+import Team from "./Team";
 
 
 const About = () => {
@@ -92,6 +93,7 @@ const About = () => {
               </div>
             </div>
           </div>
+          <Team></Team>
         </section>
       </div>
     );
