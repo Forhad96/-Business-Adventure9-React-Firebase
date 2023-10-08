@@ -57,10 +57,10 @@ const Navbar = () => {
           </div>
         ) : (
         
-            <p className="bg-green-10 py-2 px-4  rounded">
+            <div className="bg-green-10 py-2 px-4  rounded">
 
               <Login></Login>
-            </p>
+            </div>
        
         )}
       </div>
