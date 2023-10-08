@@ -1,8 +1,23 @@
 import { NavLink } from "react-router-dom";
 import Login from "../../Pages/Users/Login";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import toast from "react-hot-toast";
 
 
 const Navbar = () => {
+  const {user,logOut}=useContext(AuthContext)
+  // handle logoUt 
+  const handleLogOut=()=>{
+    logOut()
+    .then(()=>{
+      toast.success('LogOut Successful')
+    })
+    .catch(error=>{
+      toast.error(error.code)
+    })
+
+  }
   const links = (
     <>
       <NavLink to="/" className="navbar-item">
@@ -22,7 +37,7 @@ const Navbar = () => {
       </NavLink>
     </>
   );
-  const user = null;
+
   return (
     <div className="navbar rounded-lg bg-green-2 ">
       <div className="navbar-start">
@@ -48,8 +63,8 @@ const Navbar = () => {
                   <a tabIndex="-1" className="dropdown-item text-sm">
                     Account settings
                   </a>
-                  <a tabIndex="-1" className="dropdown-item text-sm">
-                    Subscriptions
+                  <a onClick={handleLogOut} tabIndex="-1" className="dropdown-item text-sm">
+                    LogOut
                   </a>
                 </div>
               </div>

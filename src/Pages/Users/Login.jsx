@@ -5,7 +5,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
 
 const Login = () => {
-  const {singInEmail} = useContext(AuthContext)
+  const { singInEmail } = useContext(AuthContext);
 
   // this handle for when click sing up button close login pop up
   const handleSingUp = () => {
@@ -15,21 +15,21 @@ const Login = () => {
   // handle  login form
 
   const handleLogin = (e) => {
-    e.preventDefault()
-    const form = new FormData(e.currentTarget)
-    const email = form.get('email')
-    const password = form.get('password')
-    
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    const email = form.get("email");
+    const password = form.get("password");
+
     // validation
-    singInEmail(email,password)
-    .then(result =>{
-      console.log(result.user);
-      toast.success('Login successful')
-    })
-    .catch(error =>{
-      console.log(error);
-      toast.error(error.code)
-    })
+    singInEmail(email, password)
+      .then((result) => {
+        console.log(result.user);
+        toast.success("Login successful");
+      })
+      .catch((error) => {
+        console.log(error);
+        toast.error(error.code);
+      });
   };
 
   return (

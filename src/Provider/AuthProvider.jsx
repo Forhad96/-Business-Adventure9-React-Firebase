@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { createContext, useEffect, useState } from "react";
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, updateProfile } from "firebase/auth";
 import app from '../firebase/firebaseConfig';
 
  const auth = getAuth(app);
@@ -43,13 +43,18 @@ const singInEmail =(email,password)=>{
     return signInWithEmailAndPassword(auth,email,password)
 }
 
-
+// sing out user 
+const logOut =()=>{
+  setLoading(true)
+  return signOut(auth)
+}
   const authInfo = {
     user,
     loading,
     createUser,
     profileUpdate,
     singInEmail,
+    logOut,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
