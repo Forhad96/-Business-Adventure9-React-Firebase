@@ -4,10 +4,11 @@ import SocialLogin from "./SocialLogin";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
 
+
 const Register = () => {
   const [error, setError] = useState(null);
 
-  const { createUser } = useContext(AuthContext);
+  const { createUser, profileUpdate } = useContext(AuthContext);
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -44,9 +45,15 @@ const Register = () => {
     }
       // create user in firebase
       createUser(email, password)
-        .then((result) => {
-          console.log(result.user);
-          toast.success('Successfully create account')
+      .then((result) => {
+        console.log(result.user);
+        profileUpdate(name,photo)
+          .then(()=>{
+            toast.success('Successfully create account')
+          })
+          .catch(error=>{
+            toast.error(error.code)
+          })
         })
         .catch((error) => {
           console.log(error);
@@ -133,9 +140,7 @@ const Register = () => {
                         Password
                       </label>
                       <input
-                        className={`w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border ${
-                          error ? "border-red-500" : null
-                        } rounded shadow appearance-none focus:outline-none focus:shadow-outline`}
+                        className={`w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border  rounded shadow appearance-none focus:outline-none focus:shadow-outline`}
                         id="password"
                         name="password"
                         type="password"
@@ -151,9 +156,7 @@ const Register = () => {
                         Confirm Password
                       </label>
                       <input
-                        className={`w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border ${
-                          error ? "border-red-500" : null
-                        } rounded shadow appearance-none focus:outline-none focus:shadow-outline`}
+                        className={`w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border  rounded shadow appearance-none focus:outline-none focus:shadow-outline`}
                         id="c_password"
                         name="c_password"
                         type="password"
@@ -182,7 +185,7 @@ const Register = () => {
                     Login with social accounts
                   </div>
                 </form>
-                {/* <SocialLogin></SocialLogin> */}
+                <SocialLogin></SocialLogin>
                 <div className="text-center">
                   <a
                     className="inline-block text-sm dark:text-gray-5 align-baseline hover:text-blue-800"
