@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 
 const Login = () => {
   const { singInEmail } = useContext(AuthContext);
-
+const navigate = useNavigate()
   // this handle for when click sing up button close login pop up
   const handleSingUp = () => {
     document.getElementById("modal-1").checked = false;
@@ -25,6 +25,8 @@ const Login = () => {
       .then((result) => {
         console.log(result.user);
         toast.success("Login successful");
+        navigate('/')
+
       })
       .catch((error) => {
         console.log(error);

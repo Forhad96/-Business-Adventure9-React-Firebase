@@ -75,7 +75,10 @@ console.log(food);
 
 #### Answer: ?
 
-<i>The info object references the same string as the first element of the food array. Changing the value of the favoriteFood property of the info object also changes the value of the first element of the food array. Therefore, when we log the food array to the console, it will output ['🍝', '🍫', '🥑', '🍔'].
+<i>
+
+The correct answer is B: 
+The info object references the same string as the first element of the food array. Changing the value of the favoriteFood property of the info object also changes the value of the first element of the food array. Therefore, when we log the food array to the console, it will output ['🍝', '🍫', '🥑', '🍔'].
 </i>
 
 </p>

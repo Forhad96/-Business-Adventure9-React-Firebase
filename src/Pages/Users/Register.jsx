@@ -3,6 +3,7 @@ import Login from "./Login";
 import SocialLogin from "./SocialLogin";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 
 const Register = () => {
@@ -10,7 +11,7 @@ const Register = () => {
 
   const { createUser, profileUpdate } = useContext(AuthContext);
   
-
+const navigate =useNavigate()
   const handleRegister = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -51,6 +52,7 @@ const Register = () => {
         profileUpdate(name,photo)
           .then(()=>{
             toast.success('Successfully create account')
+            navigate('/')
           })
           .catch(error=>{
             toast.error(error.code)

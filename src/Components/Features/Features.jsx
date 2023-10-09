@@ -1,13 +1,11 @@
-import { useEffect } from "react";
+
 import UseGetData from "../../Hooks/UseGetData";
 // import Slider from "../Slider/Slider";
 import FeaturesCard from "./FeaturesCard";
 
 const Features = () => {
     const {features} =UseGetData()
-    useEffect(()=>{
 
-    },[])
 
     return (
       <div className="max-w-screen-xl mx-auto py-8 px-4 lg:py-16 lg:px-6">
