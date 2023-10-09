@@ -3,7 +3,7 @@ const TestimonialCard = ({ testimonial }) => {
     
   return (
     <div data-aos="flip-left">
-      <li className="text-sm leading-6">
+      <li className="text-sm leading-6 ">
         <div className="relative group">
           <div className="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200"></div>
           <a href="https://twitter.com/paraga" className="cursor-pointer">
@@ -21,11 +21,8 @@ const TestimonialCard = ({ testimonial }) => {
                   <p className="text-gray-500 text-md">CEO of Twitter</p>
                 </div>
               </div>
-              <p className="leading-normal text-gray-300 text-md">
-                Enim neque volutpat ac tincidunt vitae semper. Mattis aliquam
-                faucibus purus in massa tempor. Neque vitae tempus quam
-                pellentesque nec. Turpis cursus in hac habitasse platea
-                dictumst.
+              <p className="leading-normal flex- text-gray-300 h-20 overflow-hidden text-md">
+                {testimonial?.testimonialText}
               </p>
             </div>
           </a>

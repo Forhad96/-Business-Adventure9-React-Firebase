@@ -15,24 +15,33 @@ const Testimonial = () => {
               It&rsquo;s not just us.
             </h1>
             <p className="text-xl text-gray-100 md:text-center md:text-2xl">
-              Here's what others have to say about us.
+              Here&rsquo;s what others have to say about us.
             </p>
           </div>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           <ul className="space-y-8">
             {testimonials?.slice(0, 3).map((testimonial) => (
-              <TestimonialCard key={testimonial.id} testimonial={testimonial} ></TestimonialCard>
+              <TestimonialCard
+                key={testimonial.id}
+                testimonial={testimonial}
+              ></TestimonialCard>
             ))}
           </ul>
           <ul className="hidden space-y-8 sm:block">
             {testimonials?.slice(3, 6).map((testimonial) => (
-              <TestimonialCard key={testimonial.id} testimonial={testimonial} ></TestimonialCard>
+              <TestimonialCard
+                key={testimonial.id}
+                testimonial={testimonial}
+              ></TestimonialCard>
             ))}
           </ul>
           <ul className="hidden space-y-8 sm:block">
             {testimonials?.slice(6, 9).map((testimonial) => (
-              <TestimonialCard key={testimonial.id} testimonial={testimonial} ></TestimonialCard>
+              <TestimonialCard
+                key={testimonial.id}
+                testimonial={testimonial}
+              ></TestimonialCard>
             ))}
           </ul>
         </div>

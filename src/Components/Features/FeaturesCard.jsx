@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const FeaturesCard = ({ feature }) => {
   return (
     <div
-     
+      data-aos="fade-down-left"
       className="w-full sm:w-1/2 mb-4 px-2 text-[#DAFFFB]"
     >
       <div className="h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl">

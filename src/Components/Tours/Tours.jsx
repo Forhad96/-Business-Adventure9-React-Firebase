@@ -7,8 +7,11 @@ const Tours = () => {
 
     return (
       <div className="md:my-20 md:mx-16">
-        <h2 className="text-4xl text-center text-[#DAFFFB] font-bold mb-20">Our services</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 place-content-center">
+        <h2 className="text-4xl text-center text-[#DAFFFB] font-bold my-5 lg:mb-20">
+          Our services
+        </h2>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mx-8 place-content-center">
           {tours?.map((tour, idx) => (
             <ToursCard key={idx} tour={tour}></ToursCard>
           ))}

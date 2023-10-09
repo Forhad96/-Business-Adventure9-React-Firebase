@@ -22,38 +22,49 @@ const Navbar = () => {
   }
   const links = (
     <>
-      <NavLink to="/" className="navbar-item ">
+      <NavLink to="/" className="navbar-item hover:text-yellow-300 text-white font-bold ">
         Home
       </NavLink>
-      <NavLink to="/about" className="navbar-item ">
+      <NavLink to="/about" className="navbar-item text-white font-bold ">
         About
       </NavLink>
-      <NavLink to="/contact" className="navbar-item ">
+      <NavLink to="/contact" className="navbar-item text-white font-bold ">
         Contact
       </NavLink>
-      <NavLink to="/moments" className="navbar-item ">
+      <NavLink to="/moments" className="navbar-item text-white font-bold ">
         Moments
       </NavLink>
       
       {
-        user?<NavLink to="/favorites" className="navbar-item ">
+        user?<NavLink to="/favorites" className="navbar-item text-white font-bold ">
         Favorites
       </NavLink>:null
       }
-      <NavLink to="/profile" className="navbar-item ">
+
+      {
+        user?
+      <NavLink to="/profile" className="navbar-item text-white font-bold ">
         Profile
-      </NavLink>
+      </NavLink>:
+      null
+      }
     </>
   );
 
   return (
     <div className="navbar bg-[#088395] rounded-lg  ">
       <div className="navbar-start">
-        <Link to="/" className="navbar-item text-[#fff] text-2xl">
-          Business Adventure
+        <Link
+          to="/"
+          className="navbar-item text-[#fff] text-xl "
+        >
+          <span className="text-4xl   bg-cyan-900 px-2  rounded-full">
+            B
+          </span>
+          <span className="">Adventure</span>
         </Link>
       </div>
-      <div className="navbar-center text-red-200  hidden md:block">{links}</div>
+      <div className="navbar-center hidden md:block">{links}</div>
       <div className="navbar-end">
         <div className="avatar avatar-ring avatar-md">
           <div className="dropdown-container">
@@ -71,25 +82,43 @@ const Navbar = () => {
                   alt="avatar"
                 />
               </label>
-              <div className="dropdown-menu bg-[#176B87] dropdown-menu-bottom-left">
-                <a tabIndex="-1" className=" text-sm">
+              <div className="dropdown-menu bg-[#176B87] dropdown-menu-bottom-left ">
+                <a
+                  tabIndex="-1"
+                  className=" text-sm dropdown-active bg-yellow-400 text-center py-4 rounded mb-2 text-black font-extrabold"
+                >
                   {user?.displayName}
                 </a>
-                <NavLink to="/" className="dropdown-item text-sm ">
+                <NavLink
+                  to="/"
+                  className="dropdown-item hover:text-black  text-sm text-white "
+                >
                   Home
                 </NavLink>
-                <NavLink to="/about" className="dropdown-item text-sm ">
+                <NavLink
+                  to="/about"
+                  className="dropdown-item hover:text-black  text-sm text-white "
+                >
                   About
                 </NavLink>
-                <NavLink to="/contact" className="dropdown-item text-sm ">
+                <NavLink
+                  to="/contact"
+                  className="dropdown-item hover:text-black  text-sm text-white "
+                >
                   Contact
                 </NavLink>
-                <NavLink to="/moments" className="dropdown-item text-sm ">
+                <NavLink
+                  to="/moments"
+                  className="dropdown-item hover:text-black  text-sm text-white "
+                >
                   Moments
                 </NavLink>
 
                 {user ? (
-                  <NavLink to="/favorites" className="dropdown-item text-sm">
+                  <NavLink
+                    to="/favorites"
+                    className="dropdown-item hover:text-black  text-sm text-white"
+                  >
                     Favorites
                   </NavLink>
                 ) : null}
@@ -97,7 +126,7 @@ const Navbar = () => {
                 <a
                   onClick={handleLogOut}
                   tabIndex="-1"
-                  className="dropdown-item text-sm"
+                  className="dropdown-item text-sm hover:text-black  text-white"
                 >
                   LogOut
                 </a>
@@ -105,20 +134,16 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        {
-          user?
-            <a
-                  onClick={handleLogOut}
-                  
-                  className="btn bg-yellow-400 text-sm"
-                >
-                  LogOut
-                </a>:
-        <Login></Login>
-        }
-
-        {/* <div className="text-[#DAFFFB] text-lg font-medium border-2 border-success p-2 px-4  rounded shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]">
-          </div> */}
+        {user ? (
+          <a
+            onClick={handleLogOut}
+            className="ml-2 py-2 px-3 font-extrabold rounded bg-yellow-400"
+          >
+            LogOut
+          </a>
+        ) : (
+          <Login></Login>
+        )}
       </div>
     </div>
   );

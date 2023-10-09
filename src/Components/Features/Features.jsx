@@ -14,7 +14,10 @@ const Features = () => {
         </div>
         <div className="flex flex-col md:flex-row">
           {/* can help image */}
-          <div className="mr-0 w-96 md:mr-8 mb-6 md:mb-0">
+          <div
+            data-aos="fade-up-right"
+            className="max-w-md"
+          >
             <Slider></Slider>
           </div>
           {/* end can help image */}
