@@ -23,7 +23,7 @@
       "tourDate": "2024-04-10",
       "duration": "4 days",
       "destination": "Mountain Lodge, Nature Resort",
-      "image": "https://example.com/mountain-retreat.jpg",
+      "image": "https://i.ibb.co/BwDqvvG/tour1.jpg",
       "bookingLink": "https://example.com/book/mountain-retreat",
       "price": "$1,500 per person",
       "facilities": [
@@ -41,7 +41,7 @@
       "tourDate": "2024-06-25",
       "duration": "2 days",
       "destination": "Downtown City, State",
-      "image": "https://example.com/city-adventure.jpg",
+      "image": "https://i.ibb.co/VB6HfS6/tour2.jpg",
       "bookingLink": "https://example.com/book/city-adventure",
       "price": "$800 per person",
       "facilities": [
@@ -59,7 +59,7 @@
       "tourDate": "2024-08-15",
       "duration": "3 days",
       "destination": "Seaside Resort, Coastal Town",
-      "image": "https://example.com/coastal-getaway.jpg",
+      "image": "https://i.ibb.co/5WLWN0d/tour3.jpg",
       "bookingLink": "https://example.com/book/coastal-getaway",
       "price": "$1,200 per person",
       "facilities": [
@@ -77,7 +77,7 @@
       "tourDate": "2024-09-20",
       "duration": "5 days",
       "destination": "Remote Wilderness Camp",
-      "image": "https://example.com/wilderness-challenge.jpg",
+      "image": "https://i.ibb.co/tM9tbLK/tour4.jpg",
       "bookingLink": "https://example.com/book/wilderness-challenge",
       "price": "$2,000 per person",
       "facilities": [
@@ -95,7 +95,7 @@
       "tourDate": "2024-10-10",
       "duration": "4 days",
       "destination": "Various Historical Sites",
-      "image": "https://example.com/historical-landmarks.jpg",
+      "image": "https://i.ibb.co/sp4p2by/tour5.jpg",
       "bookingLink": "https://example.com/book/historical-landmarks",
       "price": "$1,300 per person",
       "facilities": [
@@ -113,7 +113,7 @@
       "tourDate": "2024-11-30",
       "duration": "3 days",
       "destination": "Desert Camp, Arid Region",
-      "image": "https://example.com/desert-adventure.jpg",
+      "image": "https://i.ibb.co/BskdnGc/tour6.jpg",
       "bookingLink": "https://example.com/book/desert-adventure",
       "price": "$1,100 per person",
       "facilities": [
@@ -186,28 +186,40 @@
 
   "features": [
     {
+      "id":"1",
       "featureTitle": "Customized Experiences",
-      "featureDescription": "Tailor-made corporate tours designed to meet your team's unique preferences and goals."
+      "featureDescription": "Tailor-made corporate tours designed to meet your team's unique preferences and goals.",
+      "image":"https://images.unsplash.com/photo-1617829198680-9ed6b027d7bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1650&q=80"
     },
     {
+      "id":"2",
       "featureTitle": "Expert Guides",
-      "featureDescription": "Experienced guides with in-depth knowledge of the destinations and team-building activities."
+      "featureDescription": "Experienced guides with in-depth knowledge of the destinations and team-building activities.",
+      "image":"https://images.unsplash.com/photo-1667256868520-a039cf2379a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
     },
     {
+      "id":"3",
       "featureTitle": "Seamless Planning",
-      "featureDescription": "Effortless event planning, logistics, and coordination for a stress-free experience."
+      "featureDescription": "Effortless event planning, logistics, and coordination for a stress-free experience.",
+      "image":"https://images.unsplash.com/photo-1660637750311-196c6b25eddd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1530&q=80"
     },
     {
+      "id":"4",
       "featureTitle": "Diverse Destinations",
-      "featureDescription": "Explore a variety of breathtaking destinations, from mountains to cities to coastal resorts."
+      "featureDescription": "Explore a variety of breathtaking destinations, from mountains to cities to coastal resorts.",
+      "image":"https://images.unsplash.com/photo-1667256868903-83df3f09c294?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
     },
     {
+      "id":"5",
       "featureTitle": "Team-Building Excellence",
-      "featureDescription": "Engaging team-building activities that enhance collaboration, leadership, and camaraderie."
+      "featureDescription": "Engaging team-building activities that enhance collaboration, leadership, and camaraderie.",
+      "image":"https://images.unsplash.com/photo-1683955489281-1ccff83c06ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1633&q=80"
     },
     {
+      "id":"6",
       "featureTitle": "Safety First",
-      "featureDescription": "Safety measures and precautions in place to ensure a secure and enjoyable journey."
+      "featureDescription": "Safety measures and precautions in place to ensure a secure and enjoyable journey.",
+      "image":"https://images.unsplash.com/photo-1677127860289-366516458bc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
     }
   ],
 "gallery": {
@@ -322,3 +334,9 @@
     ]
   
 }
+
+
+
+
+
+

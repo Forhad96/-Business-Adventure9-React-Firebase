@@ -1,16 +1,16 @@
 
 import UseGetData from "../../Hooks/UseGetData";
-import { useParams } from "react-router-dom";
-import Slider from "../../Components/Slider/Slider";
-import { saveDataLs } from "../../Utility/localStorage";
+import { useNavigate, useParams } from "react-router-dom";
+// import Slider from "../../Components/Slider/Slider";
+import { getDataLs, saveDataLs } from "../../Utility/localStorage";
+import toast from "react-hot-toast";
 
 const TourDetails = () => {
 
   const {tours,loading} = UseGetData()
   const {Id} = useParams()
-  console.log(typeof Id);
-  const idInt = parseInt(Id)
-
+  const idInt = parseInt(Id);
+  const navigate =useNavigate()
     if(loading){
      return (
        <div className="flex items-center justify-center h-screen">
@@ -33,22 +33,32 @@ const TourDetails = () => {
       price,
       duration,
       facilities,
+      image,
     } = filteredTour;
 
 
 
     // handle favorite
     const handleFavorite =()=>{
-
+      const localData = getDataLs()
+      const isExist = localData.includes(idInt);
+      if(isExist){
+        toast.error('Already added')
+      }
+      else{
+        toast.success('successfully added')
+      }
       saveDataLs(idInt)
+      navigate('/')
+
     }
     return (
       <div className=" py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row -mx-4">
             <div className="md:flex-1 px-4">
-              <div className="h-[400px] max-w-md rounded-lg bg-gray-300 mb-4">
-                <Slider></Slider>
+              <div className="max-w-md h-full rounded-lg bg-gray-300 mb-4">
+                <img className="h-full object-cover" src={image} alt="" />
               </div>
             </div>
             <div className="md:flex-1  px-4 ">
@@ -88,7 +98,7 @@ const TourDetails = () => {
               <div className="flex -mx-2 mt-10">
                 <div className="w-1/2 px-2">
                   <button className="w-full bg-gray-900 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800">
-                    Add to Cart
+                    Book Now
                   </button>
                 </div>
                 <div className="w-1/2 px-2">

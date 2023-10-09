@@ -53,8 +53,8 @@ const Navbar = () => {
     <div className="navbar bg-[#088395] rounded-lg  ">
       <div className="navbar-start">
         <Link to="/" className="navbar-item text-[#fff] text-xl ">
-          <span className="text-4xl   bg-cyan-900 px-2  rounded-full">B</span>
-          <span className="">Adventure</span>
+          <span className="text-4xl text-yellow-400 rounded-full"> B</span>
+          <span className="text-2xl">Adventure</span>
         </Link>
       </div>
       <div className="navbar-center hidden md:block">{links}</div>

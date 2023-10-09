@@ -4,7 +4,7 @@ const FavoriteCard = ({tour}) => {
       <article className=" flex flex-wrap md:flex-nowrap shadow-lg rounded border-4 border-success mx-auto   cursor-pointer">
         <img
           className="w-full  object-cover md:w-52"
-          src="https://i.ibb.co/Kr4b0zJ/152013403-10158311889099633-8423107287930246533-o.jpg"
+          src={tour.image}
           alt=""
         />
         <div className="bg-cyan-800">

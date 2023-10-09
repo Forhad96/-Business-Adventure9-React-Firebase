@@ -10,7 +10,7 @@ const TestimonialCard = ({ testimonial }) => {
             <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
               <div className="flex items-center space-x-4">
                 <img
-                  src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg"
+                  src="https://www.svgrepo.com/show/462819/user-circle.svg"
                   className="w-12 h-12 bg-center bg-cover border rounded-full"
                   alt="Parag Agrawal"
                 />

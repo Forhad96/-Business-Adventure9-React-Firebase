@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import UseGetData from "../../Hooks/UseGetData";
-import Slider from "../Slider/Slider";
+// import Slider from "../Slider/Slider";
 import FeaturesCard from "./FeaturesCard";
 
 const Features = () => {
     const {features} =UseGetData()
+    useEffect(()=>{
+
+    },[])
 
     return (
       <div className="max-w-screen-xl mx-auto py-8 px-4 lg:py-16 lg:px-6">
@@ -14,12 +18,10 @@ const Features = () => {
         </div>
         <div className="flex flex-col md:flex-row">
           {/* can help image */}
-          <div
-            data-aos="fade-up-right"
-            className="max-w-md"
-          >
-            <Slider></Slider>
-          </div>
+          {/* <div data-aos="fade-up-right" className="max-w-md flex">
+            {features?.map((feature) => <Slider key={feature.id} images={feature.image}></Slider>)}
+            
+          </div> */}
           {/* end can help image */}
           <div className="flex-1 flex flex-col sm:flex-row flex-wrap -mb-4 -mx-2">
             {features?.map((feature, idx) => (

@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
         <div className="mt-8  md:order-1 md:mt-0 ">
           <p className="text-center text-base text-white">
-            &copy; SvelteKit Blog App. MIT Licensed.
+            &copy; Business Adventure App. MIT Licensed.
           </p>
         </div>
       </div>

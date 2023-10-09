@@ -2,13 +2,13 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 const ToursCard = ({ tour }) => {
   return (
-    <div data-aos="zoom-in" className="relative group">
+    <div data-aos="fade-down" className="relative group">
       <div className="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200"></div>
       <div className="relative">
         <figure className="">
           <img
             className="rounded-xl"
-            src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a"
+            src={tour.image}
             alt=""
           />
         </figure>

@@ -2,7 +2,7 @@ import UseGetData from "../../Hooks/UseGetData";
 
 const Team = () => {
   const { teams } = UseGetData() || {};
-  console.log(teams);
+
 
   return (
     <div className="bg-gray-100 h-screen">

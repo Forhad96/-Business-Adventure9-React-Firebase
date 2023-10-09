@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import UseGetData from "../../Hooks/UseGetData";
 import { getDataLs } from "../../Utility/localStorage";
-import FavoriteCard from "../Users/FavoriteCard";
+import FavoriteCard from "./FavoriteCard";
 
 const Favorites = () => {
   const [filteredData , setFilteredData] = useState({})

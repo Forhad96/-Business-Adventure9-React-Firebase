@@ -33,7 +33,7 @@ const ErrorPage = () => {
             <p className="mt-4 text-gray-500 dark:text-gray-400">
               We can&rsquo;t find that page.
             </p>
-            <Link to="/" className="btn btn-outline-success mt-4">
+            <Link to="/" className="btn btn-outline-error mt-4">
               Go back
             </Link>
           </div>
