@@ -6,19 +6,19 @@ const About = () => {
       <div>
         <section className="bg-gray-100 py-16">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-extrabold text-gray-900">
-              Our Vision
+            <h2 className="text-3xl font-extrabold text-gray-900 text-center ">
+              <span className="text-cyan-600">Our</span> Vision
             </h2>
             <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              <div>
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+              <div className="border-r-2  border-b-2 mb-3 border-cyan-500">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-cyan-600 text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="w-8 h-8"
                   >
                     <path
                       strokeLinecap="round"
@@ -30,20 +30,22 @@ const About = () => {
                 <div className="mt-5">
                   <h3 className="text-lg font-medium text-gray-900">Mission</h3>
                   <p className="mt-2 text-base text-gray-500">
-                    We aim to make the world a better place through innovation
-                    and collaboration.
+                    Our mission is to provide exceptional corporate tours that
+                    foster teamwork, create lasting memories, and inspire
+                    growth.
                   </p>
                 </div>
               </div>
-              <div>
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+
+              <div className="border-r-2  border-b-2 mb-3 border-cyan-500">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-cyan-600 text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="w-8 h-8"
                   >
                     <path
                       strokeLinecap="round"
@@ -60,15 +62,16 @@ const About = () => {
                   </p>
                 </div>
               </div>
-              <div>
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+
+              <div className="border-r-2  border-b-2 mb-3 border-cyan-500">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-cyan-600 text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="w-8 h-8"
                   >
                     <path
                       strokeLinecap="round"
@@ -85,9 +88,9 @@ const About = () => {
                 <div className="mt-5">
                   <h3 className="text-lg font-medium text-gray-900">Vision</h3>
                   <p className="mt-2 text-base text-gray-500">
-                    We envision a world where technology is used to solve the
-                    most pressing issues facing humanity and improve people's
-                    lives.
+                    Our vision is to be the leading provider of corporate tour
+                    experiences known for excellence, innovation, and customer
+                    satisfaction.
                   </p>
                 </div>
               </div>

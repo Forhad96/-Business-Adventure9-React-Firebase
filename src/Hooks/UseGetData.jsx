@@ -5,7 +5,8 @@ import { useState } from "react";
 const UseGetData = () => {
     const [allData,setAllData]=useState({})
     const[loading,setLoading] = useState(true)
-    const { heroSection, tours, features, faqSection, testimonials } = allData;
+    const { heroSection, tours, features, faqSection, testimonials, teams } =
+      allData;
 
 
     useEffect(()=>{
@@ -25,6 +26,7 @@ const UseGetData = () => {
       features,
       faqSection,
       testimonials,
+      teams,
     };
 };
 

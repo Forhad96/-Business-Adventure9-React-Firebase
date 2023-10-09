@@ -7,7 +7,7 @@ const Tours = () => {
 
     return (
       <div className="md:my-20 md:mx-16">
-        <h2 className="text-4xl text-center text-[#DAFFFB] font-bold my-5 lg:mb-20">
+        <h2 className="text-4xl text-center border-b-4 text-[#DAFFFB] font-bold my-5 lg:mb-20">
           Our services
         </h2>
         

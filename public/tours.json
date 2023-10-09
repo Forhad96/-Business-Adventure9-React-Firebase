@@ -302,25 +302,23 @@
         "answer": "Certainly! We encourage creativity. If you have a specific team-building activity in mind, let us know during the tour customization process, and we'll do our best to accommodate your request."
       }
     ],
-  "aboutUs": {
-    "mission": "Our mission is to provide exceptional corporate tours that foster teamwork, create lasting memories, and inspire growth.",
-    "vision": "Our vision is to be the leading provider of corporate tour experiences known for excellence, innovation, and customer satisfaction.",
-    "team": [
+ 
+  "teams": [
       {
         "name": "John Smith",
         "position": "Founder & CEO",
-        "image": "https://example.com/john-smith.jpg"
+        "image": "https://images.pexels.com/photos/1587014/pexels-photo-1587014.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       },
       {
         "name": "Emily Johnson",
         "position": "COO",
-        "image": "https://example.com/emily-johnson.jpg"
+        "image": "https://images.pexels.com/photos/2897883/pexels-photo-2897883.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       },
       {
         "name": "David Wilson",
         "position": "Director of Operations",
-        "image": "https://example.com/david-wilson.jpg"
+        "image": "https://images.pexels.com/photos/3778680/pexels-photo-3778680.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       }
     ]
-  }
+  
 }

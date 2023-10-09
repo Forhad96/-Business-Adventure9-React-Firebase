@@ -18,10 +18,7 @@ const Banner = () => {
           <div className="absolute inset-0 bg-black opacity-50" />
         </div>
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-          <h1
-            data-aos="fade-down"
-            className="text-4xl md:text-5xl font-bold leading-tight mb-4"
-          >
+          <h1 className="text-4xl md:text-5xl text-[#DAFFFB] font-bold leading-tight mb-4 ">
             {heroSection.title}
           </h1>
           <p data-aos="fade-right" className="text-lg text-gray-300 mb-8">
