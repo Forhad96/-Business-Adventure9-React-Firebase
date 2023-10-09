@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 const TestimonialCard = ({ testimonial }) => {
     
   return (
-    <div>
+    <div data-aos="flip-left">
       <li className="text-sm leading-6">
         <div className="relative group">
           <div className="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200"></div>

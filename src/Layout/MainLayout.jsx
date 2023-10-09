@@ -19,7 +19,7 @@ const MainLayout = () => {
     );
   }
     return (
-      <div className="bg-[#08688e]">
+      <div className="bg-[#0A4D68]">
         <Navbar></Navbar>
         <div className="min-h-[calc(100vh-200px)]">
           <Outlet></Outlet>

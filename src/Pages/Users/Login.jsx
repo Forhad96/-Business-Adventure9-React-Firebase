@@ -34,7 +34,7 @@ const Login = () => {
 
   return (
     <article>
-      <label className="" htmlFor="modal-1">
+      <label className="btn bg-yellow-400" htmlFor="modal-1">
         Login
       </label>
 
