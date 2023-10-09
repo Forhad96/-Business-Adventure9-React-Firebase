@@ -49,7 +49,11 @@ const MyRoute = createBrowserRouter([
       },
       {
         path: "/favorites",
-        element: <Favorites></Favorites>,
+        element: (
+          <PrivateRoute>
+            <Favorites></Favorites>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/contact",
