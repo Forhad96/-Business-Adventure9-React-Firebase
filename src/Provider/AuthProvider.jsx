@@ -42,7 +42,7 @@ const profileUpdate= (name,photo)=>{
 // sinIn with email and password
 const singInEmail =(email,password)=>{
     setLoading(true)
-    return signInWithEmailAndPassword(auth,email,password)
+    return signInWithEmailAndPassword(email,password)
 }
 
 // sing out user 
